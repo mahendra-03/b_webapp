@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>JMC Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="customstylesheet.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<!--Start top navigation bars-->
+
+<div class="topnavs">
+  <div class="row bg-light">
+    <div class="col-2"></div>
+    <div class="col-10">
+      <a class="btn btn-info" id="topnav">Personal</a>
+      <a class="btn ml-auto" id="topnav">Schedule Meeting</a>
+    </div>
+  </div>
+  <div class="row bg-light border-bottom">
+    <div class="col-2"></div>
+    <div class="col-10">
+      <nav class="navbar navbar-expand-lg navbar-dark primary-color">
+
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="#" style="font-family:'ZCOOL XiaoWei'; font-size:xx-large; color: black;"><img src="logo.png"
+            style="height: 90px; width: 80px;"> JMC</a>
+
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+          aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon bg-dark"></span>
+        </button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="basicExampleNav">
+
+          <!-- Links -->
+          <ul class="navbar-nav mr-auto" id="navc">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">New Account</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Savings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Credit Cards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Crypto Trading</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Auto</a>
+            </li>
+            <!-- Dropdown -->
+          </ul>
+          <!-- Links -->
+
+          <form class="form-inline">
+            <div class="md-form my-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search " aria-label="Search">
+            </div>
+          </form>
+        </div>
+        <!-- Collapsible content -->
+
+      </nav>
+    </div>
+  </div>
+</div>
+
+<!--End top navigatiion bars-->
+
+<!--Jumbotron start-->
+
+<div class="jumbotron" style="background-color: #1945a7;">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-7">
+      <div class="row mt-5 mb-5">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <p class="display-4 mb-0 pt-3">Advantage</p>
+          <span class="d-inline"><i class="fas fa-rupee-sign fa-2x align-top pt-4"></i></span>
+          <span class="d-inline display-1 pb-3">2000</span>
+        </div>
+        <div class="col-lg-5 col-md-12 col-sm-12">
+          <h1 class="pb-2 pt-3">New JMC<br />customers:</h1>
+          <p class="text-left" style="font-size: large;">Open a new JMC Total Checking® <br />account and set up direct
+            deposit.</p>
+          <a href="OpenAcc.html" class="btn btn-success pr-4 pl-4">Open an account</a>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h1 class="card-title mb-3">Welcome</h1>
+              <a href="#" class="btn btn-primary btn-block mb-3" data-toggle="modal" data-target="#myModal">Sign in</a>
+              <a href="#" class="card-link">Not enrolled? Sign up now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
+
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+    
+      <!-- Modal Header -->
+      <div class="modal-header bg-primary">
+        <h4 class="modal-title text-light">Sign In</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      
+      <!-- Modal body -->
+      <div class="modal-body">
+        <form class="needs-validation" validate>
+          <div class="form-group">
+            <label for="uname">Username:</label>
+            <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+          <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+          <div class="form-group form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="remember" required> Validated.<br/><br/>
+              <a class="justify-end" href="#" type="checkbox" name="otp" required> Sign In with OTP?</a><br/>
+              <a href="#" type="checkbox" name="token" required> Sign In with Token?</a><br/>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Check this checkbox to continue.</div>
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--Jumbotron end-->
+
+<h3 class="display-4 text-center pb-2">Choose what's right for you</h3>
+
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <div class="row text-center" id="navn">
+      <div class="col-lg-2 col-sm-4">
+        <a class="btn font-weight-bold" href="#" data-toggle="modal" data-target="#myModal"><i class="far fa-credit-card fa-2x pb-2"></i><br />Credit Cards</a>
+      </div>
+      <div class="col-lg-2 col-sm-4">
+        <a class="btn font-weight-bold" href="#"><i class="fas fa-money-check fa-2x pb-2"></i><br />Checking</a>
+      </div>
+      <div class="col-lg-2 col-sm-4">
+        <a class="btn font-weight-bold" href="#"><i class="fas fa-piggy-bank fa-2x pb-2"></i><br />Savings</a>
+      </div>
+      <div class="col-lg-2 col-sm-4">
+        <a class="btn font-weight-bold" href="#"><i class="fas fa-home fa-2x pb-2"></i><br />Home Loans</a>
+      </div>
+      <div class="col-lg-2 col-sm-4">
+        <a class="btn font-weight-bold" href="#"><i class="fas fa-car fa-2x pb-2"></i><br />Auto</a>
+      </div>
+      <div class="col-lg-2 col-sm-4">
+        <a class="btn font-weight-bold" href="#"><i class="fas fa-city fa-2x pb-2"></i><br />Personal</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-2"></div>
+</div>
+<br /><br />
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <div class="row">
+      <div class="col-lg-4 col-sm-12">
+        <div class="card">
+          <div class="card-body">
+            <div class="row border-bottom">
+              <div class="col-6 border-right">
+                <h5 class="text-right pr-2 text-primary">Debit card for kids</h5>
+              </div>
+              <div class="col-6">
+                <i class="fas fa-child fa-3x"></i>
+              </div>
+            </div>
+            <h4 class="text-left mt-4">JMC First Banking</h4>
+            <p class="mt-3">Available exclusively for JMC existing customers to help teens and kids build good money
+              habits.</p>
+            <a href="#" class="btn btn-primary btn-block mt-4">Continue >></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-12">
+        <div class="card">
+          <div class="card-body">
+            <div class="row border-bottom">
+              <div class="col-6 border-right">
+                <h5 class="text-right pr-2 text-primary">JMC Secure Banking</h5>
+              </div>
+              <div class="col-6">
+                <i class="fab fa-keycdn fa-3x"></i>
+              </div>
+            </div>
+            <h4 class="text-left mt-4">Secure Banking</h4>
+            <p class="mt-3">Security of your account in your hands with Secure Banking.</p>
+            <a href="#" class="btn btn-primary btn-block mt-4">Continue >></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-12">
+        <div class="card">
+          <div class="card-body">
+            <div class="row border-bottom">
+              <div class="col-6 border-right">
+                <h5 class="text-right pr-2 text-primary">JMC Slate<br /> Edge</h5>
+              </div>
+              <div class="col-6">
+                <i class="fas fa-university fa-3x"></i>
+              </div>
+            </div>
+            <h4 class="text-left mt-4">Earn an instant cashback</h4>
+            <p class="mt-3">Reward for each tranactions credited instantly to your account - "Cash"back.</p>
+            <a href="#" class="btn btn-primary btn-block mt-4">Continue >></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-2"></div>
+</div>
+<br /><br />
+
+<div class="row">
+  <div class="col-2"></div>
+  <div class="col-8">
+    <div class="row border-top border-bottom pt-5 pb-5">
+      <div class="col-lg-5 col-md-12">
+        <img src="img1.jpg">
+      </div>
+      <div class="col-lg-7 col-md-12">
+        <p class="display-4">Learn how to bank from almost anywhere</p>
+        <p style="font-size: larger;">Watch our videos to how to send money to a friend, deposit a check using a phone,
+          pay a bill on-the-go and more.</p>
+        <a href="#" class="btn btn-success pl-5 pr-5">Go to videos</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-2"></div>
+</div>
+
+<div class="row">
+  <div class="col-2"></div>
+  <div class="col-8">
+    <div class="row border-bottom pt-5 pb-5">
+      <div class="col-lg-7 col-md-12">
+        <p class="display-4">Deposit checks in a snap</p>
+        <p style="font-size: larger;">JMC QuickDeposit lets you easily deposit checks from virtually anywhere. Just open
+          the app, take a photo and access your money.</p>
+        <a href="#" class="btn btn-success pl-5 pr-5">See how</a>
+      </div>
+      <div class="col-5">
+        <img src="img2.jpg">
+      </div>
+    </div>
+  </div>
+  <div class="col-2"></div>
+</div>
+
+<div class="row">
+  <div class="col-2"></div>
+  <div class="col-8">
+    <div class="row border-top border-bottom pt-5 pb-5">
+      <div class="col-5">
+        <img src="img3.jpg">
+      </div>
+      <div class="col-lg-7 col-md-12">
+        <p class="display-4">Take card payments online or over the phone</p>
+        <p style="font-size: larger;">No matter how your customers want to pay, we can help you find the right solution
+          for your business.</p>
+        <a href="#" class="btn btn-success pl-5 pr-5">Get Started</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-2"></div>
+</div>
+
+<div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+  <p style="font-size: larger;">Managing your money securely for you.</p><br />
+  <div class="row">
+    <div class="col-lg-2 col-sm-4">
+      <p class="font-weight-bold"><i class="far fa-credit-card fa-2x pb-2"></i><br />Credit Cards</p>
+    </div>
+    <div class="col-lg-2 col-sm-4">
+      <p class="font-weight-bold"><i class="fas fa-money-check fa-2x pb-2"></i><br />Checking</p>
+    </div>
+    <div class="col-lg-2 col-sm-4">
+      <p class="font-weight-bold"><i class="fas fa-piggy-bank fa-2x pb-2"></i><br />Savings</p>
+    </div>
+    <div class="col-lg-2 col-sm-4">
+      <p class="font-weight-bold"><i class="fas fa-home fa-2x pb-2"></i><br />Home Loans</p>
+    </div>
+    <div class="col-lg-2 col-sm-4">
+      <p class="font-weight-bold"><i class="fas fa-car fa-2x pb-2"></i><br />Auto</p>
+    </div>
+    <div class="col-lg-2 col-sm-4">
+      <p class="font-weight-bold"><i class="fas fa-city fa-2x pb-2"></i><br />Commercial</p>
+    </div>
+  </div>
+</div>
+
+</html>
